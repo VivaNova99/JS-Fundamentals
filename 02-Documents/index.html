@@ -16,8 +16,52 @@
 <body>
 
 <header>
-    <img src="/img/02-Documents/Header_Footer/header.png" alt="EPAM"/>
-    <img src="/img/02-Documents/Header_Footer/odm.png" alt="ODM"/>
+    <div class="upper_header">
+        <div class="upper_header_sharepoint"><img src="/img/02-Documents/Header_Footer/header_sharepoint_icon.png">Sharepoint</div>
+        <div class="upper_header_navigation">
+            <ul>
+                <li><a href="#">My Sites</a></li>
+                <li><a href="#">Yammer</a></li>
+                <li><a href="#">OneDrive</a></li>
+                <li><a href="#">Sites</a></li>
+            </ul>
+        </div>
+        <div class="upper_header_user">
+            <ul>
+                <li class="active"><a href="#">Elisaveta Eliseeva<img src="#"></a> </li>
+                <li><a href="#"><img src="#"></a></li>
+                <li><a href="#"><img src="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="medium_header">
+        <div class="medium_header_navigation">
+            <ul>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </div>
+        <div class="medium_header_actions">
+            <ul>
+                <li><a href="#"><img src="#">Share</a></li>
+                <li><a href="#"><img src="#">Follow</a></li>
+                <li><a href="#"><img src="#">Edit</a></li>
+                <li><a href="#"><img src="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_header">
+        <div class="bottom_header_epam_logo">
+            <ul>
+                <li><a href="/"><img src="/img/02-Documents/Header_Footer/header_epam_logo.png"></a></li>
+                <li><a href="#">Odm</a></li>
+            </ul>
+        </div>
+        <div class="bottom_header_search">
+            <a href="#"><img src="#"></a>
+        </div>
+    </div>
 </header>
 <nav>
     <ul>
@@ -46,78 +90,91 @@
 <section>
     <section class="toolbox">
 
-        <button id="CreateDocButton" class="active">
-            <a href="#">
-                <img src="/img/02-Documents/CreateDocButton/create_doc__icon.png"/>
-                Create document
-                <img src="/img/02-Documents/CreateDocButton/down_icon.png"/>
-            </a>
-            <ul>
-                <li><a href="#">Incoming Document</a></li>
-                <li><a href="#">Outgoing Document</a></li>
-                <li><a href="#">Fax Document</a></li>
-                <li><a href="#">Warrant</a></li>
-                <li><a href="#">Job Description</a></li>
-                <li class="active">
-                    <a href="#">Contract <img src="/img/02-Documents/CreateDocButton/arrow_icon__-.png"/></a>
-                    <ul>
-                        <li><a href="#">Rent</a></li>
-                        <li><a href="#">Constriction</a></li>
-                        <li><a href="#">Security services</a></li>
-                        <li><a href="#">Sponsorship</a></li>
-                        <li><a href="#">Maintenance services</a></li>
-                        <li><a href="#">Furniture/chairs supply</a></li>
-                        <li><a href="#">Software development and delivery</a></li>
-                        <li><a href="#">Licences</a></li>
-                        <li><a href="#">HW supply</a></li>
-                        <li><a href="#">NDA</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Supply</a></li>
-                        <li><a href="#">Work contract</a></li>
-                        <li><a href="#">Contract with individuals</a></li>
-                        <li><a href="#">Education, seminars & trainings</a></li>
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </button>
+        <ul>
+            <li>
+                <div>
+                    <button id="CreateDocButton" class="active">
+                    <a href="#">
+                        <img src="/img/02-Documents/CreateDocButton/create_doc__icon.png"/>
+                        Create document
+                        <img src="/img/02-Documents/CreateDocButton/down_icon.png"/>
+                    </a>
+                    </button>
+                    <div>
+                        <ul>
+                            <li><a href="#">Incoming Document</a></li>
+                            <li><a href="#">Outgoing Document</a></li>
+                            <li><a href="#">Fax Document</a></li>
+                            <li><a href="#">Warrant</a></li>
+                            <li><a href="#">Job Description</a></li>
+                            <li class="active">
+                                <a href="#">Contract <img src="/img/02-Documents/CreateDocButton/arrow_icon__-.png"/></a>
+                                <ul>
+                                    <li><a href="#">Rent</a></li>
+                                    <li><a href="#">Constriction</a></li>
+                                    <li><a href="#">Security services</a></li>
+                                    <li><a href="#">Sponsorship</a></li>
+                                    <li><a href="#">Maintenance services</a></li>
+                                    <li><a href="#">Furniture/chairs supply</a></li>
+                                    <li><a href="#">Software development and delivery</a></li>
+                                    <li><a href="#">Licences</a></li>
+                                    <li><a href="#">HW supply</a></li>
+                                    <li><a href="#">NDA</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Supply</a></li>
+                                    <li><a href="#">Work contract</a></li>
+                                    <li><a href="#">Contract with individuals</a></li>
+                                    <li><a href="#">Education, seminars & trainings</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#">Other</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
 
-        <button id="AttachDocButton" class="active">
-            <a href="#">
-                <img src="/img/02-Documents/AttachDocButton/attach_doc__icon.png"/>
-                Attach document
-                <img src="/img/02-Documents/AttachDocButton/down_icon.png"/>
-            </a>
-            <ul>
-                <li><a href="#">Contract</a></li>
-                <li class="active">
-                    <a href="#">Annex <img src="/img/02-Documents/AttachDocButton/arrow_icon__-.png"></a>
-                    <ul>
-                        <li><a href="#">Act of acceptance of property or rooms</a></li>
-                        <li><a href="#">Price negotiations protocol</a></li>
-                        <li><a href="#">Estimate</a></li>
-                        <li><a href="#">Requirements specification, project, scheme, layout or another task</a></li>
-                        <li><a href="#">Payment schedule</a></li>
-                        <li><a href="#">Work/services fulfillment schedule</a></li>
-                        <li><a href="#">Protocol of disagreements</a></li>
-                        <li><a href="#">Disagreements settlement protocol</a></li>
-                        <li><a href="#">Certificate of cost of the performed work</a></li>
-                        <li><a href="#">Acts of acceptance of the performed works / rendered services</a></li>
-                        <li><a href="#">Supply contracts specifications</a></li>
-                        <li><a href="#">Acts of acceptance of the rendered services (software development)</a></li>
-                        <li><a href="#">Act of acceptance of the rights for the computer program</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
-            </ul>
+            <li>
+                <div>
+                    <button id="AttachDocButton" class="active">
+                        <a href="#">
+                            <img src="/img/02-Documents/AttachDocButton/attach_doc__icon.png"/>
+                            Attach document
+                            <img src="/img/02-Documents/AttachDocButton/down_icon.png"/>
+                        </a>
+                    </button>
+                    <div>
+                        <ul>
+                            <li><a href="#">Contract</a></li>
+                            <li class="active">
+                                <a href="#">Annex <img src="/img/02-Documents/AttachDocButton/arrow_icon__-.png"></a>
+                                <ul>
+                                    <li><a href="#">Act of acceptance of property or rooms</a></li>
+                                    <li><a href="#">Price negotiations protocol</a></li>
+                                    <li><a href="#">Estimate</a></li>
+                                    <li><a href="#">Requirements specification, project, scheme, layout or another task</a></li>
+                                    <li><a href="#">Payment schedule</a></li>
+                                    <li><a href="#">Work/services fulfillment schedule</a></li>
+                                    <li><a href="#">Protocol of disagreements</a></li>
+                                    <li><a href="#">Disagreements settlement protocol</a></li>
+                                    <li><a href="#">Certificate of cost of the performed work</a></li>
+                                    <li><a href="#">Acts of acceptance of the performed works / rendered services</a></li>
+                                    <li><a href="#">Supply contracts specifications</a></li>
+                                    <li><a href="#">Acts of acceptance of the rendered services (software development)</a></li>
+                                    <li><a href="#">Act of acceptance of the rights for the computer program</a></li>
+                                    <li><a href="#">Other</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </li>
 
-        </button>
-
-        <div id="Search">
-            <form action="#">
-                <input type="search" title="search" placeholder="Search"/>
-            </form>
-        </div>
+            <li><div id="Search">
+                <form action="#">
+                    <input type="search" title="search" placeholder="Search"/>
+                </form>
+            </div></li>
+        </ul>
 
     </section>
 
@@ -222,9 +279,9 @@
 <footer>
     <img src="/img/02-Documents/Header_Footer/footer.png"/>
     <a href="#">About</a>
-    <img src="/img/02-Documents/Header_Footer/-.png"/>
+    <img src="/img/02-Documents/Header_Footer/footer_line__-.png"/>
     <a href="#">Help</a>
-    <img src="/img/02-Documents/Header_Footer/-.png"/>
+    <img src="/img/02-Documents/Header_Footer/footer_line__-.png"/>
     <a href="#">Report a bug</a>
 </footer>
 
