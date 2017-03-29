@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 img, form, a {
     margin: 0;
     padding: 0;
@@ -40,10 +42,23 @@ body {
     /*min-height: 29px;*/
     float: right;
 }
+.fa.fa-caret-down {
+    color: #464547;
+}
+.fa.fa-cog {
+    color: #787779;
+}
+.fa.fa-question-circle {
+    color: #787779;
+}
 
 .medium_header {
     background-color: #eeeeee;
     min-height: 32px;
+}
+.medium_header_actions ul > li > a > i,
+.medium_header_actions ul > li > a {
+    color: #999999;
 }
 
 .bottom_header {
@@ -66,4 +81,27 @@ body {
 .bottom_header_search_icon {
     float: right;
     padding: 23px 19px 19px 0;
+    color: #c6c6c6;
+}
+.fa.fa-search {
+    color: #cccccc;
+}
+
+
+
+/*form.toolbox_search > input{
+    font-family: "FontAwesome";
+}*/
+
+.toolbox_search::before {
+    /*отредактировать расположение и цвет*/
+    content: "\f002";
+    /*noinspection CssNoGenericFontName*/
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 16px;
+
+    position: absolute;
+    display: block;
+    margin: 8px 0 0 19px;
 }
