@@ -1,0 +1,69 @@
+img, form, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    display: block; /* иначе выдается вниз из-за стандартных отступов браузера */
+}
+
+body {
+    margin: 0;
+}
+
+
+.upper_header {
+    background-color: #39c2d7;
+    min-height: 29px;
+}
+.header_sharepoint_icon {
+    padding: 2px 7px 2px 22px;
+    /*background-color: #39c2d7;*/
+    float: left;
+}
+.header_sharepoint_text {
+    font: 12px Oswald;
+    color: white;
+    /*background-color: #39c2d7;*/
+    margin: 0;
+    float: left;
+    /*min-height: 29px;*/
+    padding: 10px 0 7px 0;
+}
+.upper_header_navigation {
+    font: 14px Source Sans Pro;
+    /*background-color: #39c2d7;*/
+}
+.upper_header_user {
+    background-color: #eeeeee;
+    /*min-height: 29px;*/
+    float: right;
+}
+
+.medium_header {
+    background-color: #eeeeee;
+    min-height: 32px;
+}
+
+.bottom_header {
+    background-color: #464547;
+    min-height: 62px;
+}
+.epam_logo {
+    float: left;
+    height: 42px;
+    width: 87px;
+    padding: 10px 22px 10px 20px;
+}
+.bottom_header_text_odm {
+    float: left;
+    font: 18px Oswald;
+    color: #39c2d7;
+    padding: 22px 0;
+}
+
+.bottom_header_search_icon {
+    float: right;
+    padding: 23px 19px 19px 0;
+}
