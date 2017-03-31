@@ -1,0 +1,59 @@
+nav{
+    width: 250px;
+    height: 100%;
+    background-color: #39c2d7;
+}
+
+nav > ul {
+    padding-left: 0;
+}
+
+nav > ul > li > ul {
+    padding-left: 0;
+}
+
+nav > ul > li {
+    /*height: 12px;*/
+    color: #ffffff;
+    font: 14px Oswald;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #5ecbdc;
+    line-height: 47px;
+    list-style-type: none;
+    /*display: block;*/
+}/*основное меню навигации*/
+
+
+nav > ul > li > a > i{
+    margin-right: 23px;
+    margin-left: 31px;
+    color: #ffffff;
+    height: 17px
+} /*значки в меню навигации*/
+
+
+nav > ul > li > ul > li {
+    /*display: block;*/
+    list-style-type: none;
+    /*margin-left: 0;*/
+    background-color: #e1f6f9;
+}/*подменю навигации*/
+
+
+nav > ul > li > a {
+    color: #ffffff;
+}/*названия в меню навигации*/
+
+
+nav > ul > li > ul > li > a {
+    color: #818283;
+    margin-left: 29px;
+}/*названия в подменю навигации*/
+
+.fa.fa-caret-down {
+    margin-left: 68px;
+    color: #ffffff;
+} /*стрелка вниз из меню навигации в подменю*/
+

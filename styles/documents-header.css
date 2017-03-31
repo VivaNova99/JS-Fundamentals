@@ -10,12 +10,10 @@
     float: left;
 }
 .header_sharepoint_text {
-    font: 12px Oswald;
-    color: white;
-    /*background-color: #39c2d7;*/
-    margin: 0;
-    float: left;
-    /*min-height: 29px;*/
+    color: #fefefe;
+    font: 14px Oswald;
+    font-weight: 400;
+    text-transform: uppercase;
     padding: 10px 0 7px 0;
 }
 .upper_header_navigation {
@@ -59,8 +57,13 @@
 .bottom_header_text_odm {
     float: left;
     font: 18px Oswald;
-    color: #39c2d7;
     padding: 22px 0;
+
+    width: 35px;
+    height: 17px;
+    color: #7ae6f7;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .bottom_header_search_icon {

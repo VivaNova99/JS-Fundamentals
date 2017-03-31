@@ -8,6 +8,10 @@ img {
     display: block; /* иначе выдается вниз из-за стандартных отступов браузера */
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
 }
