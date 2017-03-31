@@ -1,0 +1,18 @@
+/*form.toolbox_search > input{
+    font-family: "FontAwesome";
+}*/
+.toolbox_search {
+    position: relative;
+}
+.toolbox_search::before {
+    /*отредактировать расположение и цвет*/
+    content: "\f002";
+    /*noinspection CssNoGenericFontName*/
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 16px;
+
+    position: absolute;
+    display: block;
+    margin: 8px 0 0 19px;
+}
