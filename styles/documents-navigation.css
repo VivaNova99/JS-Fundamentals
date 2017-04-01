@@ -29,10 +29,17 @@ nav > ul > li {
 nav > ul > li > a > i{
     margin-right: 23px;
     margin-left: 31px;
-    color: #ffffff;
-    height: 17px
 } /*значки в меню навигации*/
 
+
+.fa.fa-archive, .fa.fa-calendar, .fa.fa-file-text-o, .fa.fa-home, .fa.fa-list-ul, .fa.fa-suitcase {
+    color: #ffffff;
+    /*height: 17px*/
+    width: 19px;
+    height: 23px;
+    font-size: 22px;
+    font-weight: 400;
+} /*значки в меню навигации*/
 
 nav > ul > li > ul > li {
     /*display: block;*/
@@ -56,4 +63,8 @@ nav > ul > li > ul > li > a {
     margin-left: 68px;
     color: #ffffff;
 } /*стрелка вниз из меню навигации в подменю*/
+
+nav > ul > li.active {
+    background-color: #31a5b7;
+}
 
