@@ -64,7 +64,8 @@ nav > ul > li > ul > li > a {
     color: #ffffff;
 } /*стрелка вниз из меню навигации в подменю*/
 
-nav > ul > li.active {
+/*nav > ul > li.active*/
+.active.sidebar-choice {
     background-color: #31a5b7;
 }
 
