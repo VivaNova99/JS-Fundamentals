@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .upper_header {
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: #39c2d7;
     min-height: 29px;
 }
+
+.upper_header > div,
+.upper_header_navigation > ul > li,
+.upper_header_user > ul > li,
+.medium_header > div,
+.medium_header_navigation > ul > li,
+.medium_header_actions > ul >li {
+    display: inline-block;
+}
+
 .header_sharepoint_icon {
     padding: 2px 7px 2px 22px;
     /*background-color: #39c2d7;*/
     float: left;
 }
 .header_sharepoint_text {
+    position: relative;
+    top: 5px;
     color: #fefefe;
     font: 14px Oswald;
     font-weight: 400;
@@ -18,44 +30,143 @@
     padding: 10px 0 7px 0;
 }
 .upper_header_navigation {
+    position: relative;
+    top: 6px;
+    right: 20px;
     font: 14px Source Sans Pro;
-    /*background-color: #39c2d7;*/
-}
-.upper_header_user {
-    background-color: #eeeeee;
-    /*min-height: 29px;*/
     float: right;
 }
-.fa.fa-caret-down {
-    color: #464547;
+
+.upper_header_navigation ul > li > a {
+    padding-right: 15px;
+    color: #ffffff;
 }
-.fa.fa-cog {
+
+.upper_header_user {
+    background-color: #eeeeee;
+    min-height: 29px;
+    float: right;
+}
+
+.upper_header_user > ul {
+    position: relative;
+    top: 4px;
+    padding-left: 22px;
+    padding-right: 18px;
+}
+
+.upper_header_user > ul > li > a {
+    color: #454446;
+}
+
+.active.user > a > .fa.fa-caret-down {
+    list-style-type: none;
+    color: #454446;
+    padding-left: 15px;
+}
+/*не срабатывает*/
+
+.upper_header_user > ul > li > a > .fa.fa-cog,
+.upper_header_user > ul > li > a > .fa.fa-question-circle {
     color: #787779;
 }
-.fa.fa-question-circle {
-    color: #787779;
+
+.upper_header_user > ul > li > a > .fa.fa-cog {
+    padding-left: 14px;
 }
+
+.upper_header_user > ul > li > a > .fa.fa-question-circle {
+    padding-left: 9px;
+}
+
 
 .medium_header {
     background-color: #eeeeee;
     min-height: 32px;
 }
+
+.medium_header_navigation {
+    position: relative;
+    top: 6px;
+}
+.medium_header_navigation ul > li > a {
+    /*position: relative;*/
+    /*top: 5px;*/
+    padding: 3px 8px 2px 9px;
+    margin: 7px 3px 6px 3px;
+    /*width: 102px;*/
+    /*height: 10px;*/
+    color: #7e7e7e;
+    font: 14px Source Sans Pro;
+    /*font-family: "Source Sans Pro";*/
+    /*font-size: 14px;*/
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.active.medium_header_navigation {
+    position: relative;
+    top: 0;
+    margin-left: 20px;
+    size: 59px 19px;
+    background-color: #40c3d6;
+}
+
+.active.medium_header_navigation a {
+    color: #ffffff;
+}
+
+.medium_header_actions {
+    float: right;
+    position: relative;
+    top: 6px;
+}
+
 .medium_header_actions ul > li > a > i,
 .medium_header_actions ul > li > a {
     color: #999999;
+}
+
+.medium_header_actions ul > li > a {
+    font: 14px Source Sans Pro;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.medium_header_actions ul > li > a > .fa.fa-share-alt {
+    padding-right: 4px;
+}
+
+.medium_header_actions ul > li > a > .fa.fa-star-o {
+    padding-left: 19px;
+    padding-right: 4px;
+}
+
+.medium_header_actions ul > li > a > .fa.fa-pencil {
+    padding-left: 17px;
+    padding-right: 4px;
+}
+
+.medium_header_actions ul > li > a > .fa.fa-arrows-alt {
+    padding-left: 32px;
+    padding-right: 19px;
 }
 
 .bottom_header {
     background-color: #464547;
     min-height: 62px;
 }
+
 .epam_logo {
     float: left;
     height: 42px;
     width: 87px;
     padding: 10px 22px 10px 20px;
 }
+
 .bottom_header_text_odm {
+    position: relative;
+    top: -4px;
     float: left;
     font: 18px Oswald;
     padding: 22px 0;
@@ -69,9 +180,11 @@
 
 .bottom_header_search_icon {
     float: right;
-    padding: 23px 19px 19px 0;
+    padding: 23px 0 19px 19px;
     color: #c6c6c6;
+    transform: scaleX(-1);
 }
+
 .fa.fa-search {
     color: #cccccc;
 }

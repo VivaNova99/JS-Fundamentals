@@ -21,7 +21,6 @@ nav > ul > li {
 
     border-bottom: 1px solid #5ecbdc;
     line-height: 47px;
-    list-style-type: none;
     /*display: block;*/
 }/*основное меню навигации*/
 
@@ -59,7 +58,7 @@ nav > ul > li > ul > li > a {
     margin-left: 29px;
 }/*названия в подменю навигации*/
 
-.fa.fa-caret-down {
+.active.sidebar-choice > a > .fa.fa-caret-down {
     margin-left: 68px;
     color: #ffffff;
 } /*стрелка вниз из меню навигации в подменю*/
