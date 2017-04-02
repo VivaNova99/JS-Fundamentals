@@ -1,12 +1,14 @@
-section.content > section:target
-section.content > section.default
-{
+section.content > div:target + section,
+    /*чтобы при выборе вкладки экран не смещался, добавляем пустой элемент div, и делаем его целью - все равно смещается ((*/
+section.content > section,
+section.content > div,
+section.content > div.default:target + section {
     display: block;
-}
-
-section.content > section
-section.content > section:target + section.default,
-section.content > section:target ~ section.default {
-    display: none;
 }  /*вторые две строчки - для того, чтобы неактивная вкладка не отображалась и не торчала из под активной, если*/
 /*она короче. Решение, вообще-то, для двух вкладок, для трех и более - нужно использовать first child еще*/
+
+
+section.content > div.default + section
+{
+    display: none;
+}

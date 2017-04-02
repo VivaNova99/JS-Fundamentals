@@ -185,7 +185,7 @@
     transform: scaleX(-1);
 }
 
-.fa.fa-search {
+.bottom_header_search_icon .fa.fa-search {
     color: #cccccc;
 }
 

@@ -32,6 +32,7 @@ td {
     font: 14px Source Sans Pro;
     font-weight: 300;
     border-width: 0;
+    height: 39px;
 }
 
 th, td {
@@ -42,7 +43,7 @@ th, td {
     background-color: #f1f1f1;
 }
 
-.execution-mark, .status {
+.execution-mark, .status, .actions {
     text-align: center;
 }
 /*td.first-row {*/
