@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/styles/documents-header.css">
     <link rel="stylesheet" href="/styles/documents-navigation.css">
     <link rel="stylesheet" href="/styles/documents-main-toolbox.css">
-    <link rel="stylesheet" href="/styles/documents-main-sections.css">
+    <link rel="stylesheet" href="/styles/documents-main-tabs.css">
+    <link rel="stylesheet" href="/styles/documents-main-tables.css">
     <link rel="stylesheet" href="/styles/documents-footer.css">
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -101,13 +102,13 @@
         <ul>
             <li>
                 <div>
-                    <button id="CreateDocButton" class="active">
+                    <div class="active create-document">
                     <a href="#">
-                        <img src="/img/02-Documents/CreateDocButton/create_doc__icon.png"/>
+                        <i class="fa fa-file-o" aria-hidden="true"></i><i class="fa fa-plus" aria-hidden="true"></i>
                         Create document
-                        <img src="/img/02-Documents/CreateDocButton/down_icon.png"/>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </a>
-                    </button>
+                    </div>
                     <!--<div>-->
                         <!--<ul>-->
                             <!--<li><a href="#">Incoming Document</a></li>-->
@@ -144,13 +145,13 @@
 
             <li>
                 <div>
-                    <button id="AttachDocButton" class="active">
+                    <div class="active create-document">
                         <a href="#">
-                            <img src="/img/02-Documents/AttachDocButton/attach_doc__icon.png"/>
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
                             Attach document
-                            <img src="/img/02-Documents/AttachDocButton/down_icon.png"/>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </a>
-                    </button>
+                    </div>
                     <!--<div>-->
                         <!--<ul>-->
                             <!--<li><a href="#">Contract</a></li>-->
@@ -189,11 +190,11 @@
 
     <section class="content">
         <ul>
-            <li><a href="#createdByMeTab"><img src="/img/02-Documents/Tabs/created_by_me_icon__--.png">Created by me</a></li>
+            <li><a href="#createdByMeTab"><i class="fa fa-pencil" aria-hidden="true"></i>Created by me</a></li>
 
-            <li><a href="#underMyApprovalTab"><img src="/img/02-Documents/Tabs/under_my_approval_icon__--.png">Under my approval</a></li>
+            <li><a href="#underMyApprovalTab"><i class="fa fa-clock-o" aria-hidden="true"></i>Under my approval</a></li>
 
-            <li><a href="#sentForGroupTab"><img src="/img/02-Documents/Tabs/sent_for_group_icon__--.png">Sent for group</a></li>
+            <li><a href="#sentForGroupTab"><i class="fa fa-users" aria-hidden="true"></i>Sent for group</a></li>
         </ul>
         <section id="createdByMeTab"></section>
         <section id="underMyApprovalTab" class="default">
@@ -230,7 +231,7 @@
                     <td class="executor first-row">Ivanov Ivan</td>
                     <td class="execution-date first-row">15/15/2015</td>
                     <td class="execution-mark first-row">Signed</td>
-                    <td class="actions first-row"><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="actions first-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
                     <td class="incoming-date second-row">07/15/2015</td>
@@ -244,7 +245,7 @@
                     <td class="executor second-row">Ivanov Ivan</td>
                     <td class="execution-date second-row">15/15/2015</td>
                     <td class="execution-mark second-row">Awaits</td>
-                    <td class="actions second-row"><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="actions second-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
                     <td class="incoming-date third-row">07/15/2015</td>
@@ -258,67 +259,130 @@
                     <td class="executor third-row">Ivanov Ivan</td>
                     <td class="execution-date third-row">15/15/2015</td>
                     <td class="execution-mark third-row">Cancelled</td>
-                    <td class="actions third-row"><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="actions third-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
             </table>
 
-            <table>
+            <table class="outgoing-document">
                 <caption><header><h2>Outgoing documents</h2></header>
                     <!--<small>Add element</small>-->
                 </caption>
                 <tr>
-                    <th id="Outgoing-date" class="active">Outgoing date
-                        <img src="/img/02-Documents/Table/down_icon__--.png"></th>
-                    <th>Reg. Number</th>
-                    <th>Index</th>
-                    <th>Type</th>
-                    <th>Theme</th>
-                    <th>Send To</th>
-                    <th>Executor</th>
-                    <th>Signatory</th>
-                    <th>Notes</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th class="active outgoing-date">Outgoing date
+                        <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <img class="underline-outgoing-date" src="/img/02-Documents/Table/underline_outgoing_date__shape-1.png">
+                    </th>
+                    <th class="reg-number">Reg. Number</th>
+                    <th class="index">Index</th>
+                    <th class="type">Type</th>
+                    <th class="theme">Theme</th>
+                    <th class="send-to">Send To</th>
+                    <th class="executor">Executor</th>
+                    <th class="signatory">Signatory</th>
+                    <th class="notes">Notes</th>
+                    <th class="status">Status</th>
+                    <th class="actions">Actions</th>
                 </tr>
                 <tr>
-                    <td>07/15/2015</td><td>01-01/6</td><td>01-01</td><td>Letter</td><td>Whatever</td><td>Organization 1</td><td>Ivanov Ivan</td><td>Petrov Petr</td><td></td><td>Approved</td><td><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="outgoing-date first-row">07/15/2015</td>
+                    <td class="reg-number first-row">01-01/6</td>
+                    <td class="index first-row">01-01</td>
+                    <td class="type first-row">Letter</td>
+                    <td class="theme first-row">Whatever</td>
+                    <td class="send-to first-row">Organization 1</td>
+                    <td class="executor first-row">Ivanov Ivan</td>
+                    <td class="signatory first-row">Petrov Petr</td>
+                    <td class="notes first-row"></td>
+                    <td class="status first-row">Approved</td>
+                    <td class="actions first-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
-                    <td>07/15/2015</td><td>01-01/6</td><td>01-01</td><td>Letter</td><td>Whatever</td><td>Organization 1</td><td>Ivanov Ivan</td><td>Petrov Petr</td><td></td><td>Helded</td><td><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="outgoing-date second-row">07/15/2015</td>
+                    <td class="reg-number second-row">01-01/6</td>
+                    <td class="index second-row">01-01</td>
+                    <td class="type second-row">Letter</td>
+                    <td class="theme second-row">Whatever</td>
+                    <td class="send-to second-row">Organization 1</td>
+                    <td class="executor second-row">Ivanov Ivan</td>
+                    <td class="signatory second-row">Petrov Petr</td>
+                    <td class="notes second-row"></td>
+                    <td class="status second-row">Helded</td>
+                    <td class="actions second-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
-                    <td>07/15/2015</td><td>01-01/6</td><td>01-01</td><td>Letter</td><td>Whatever</td><td>Organization 1</td><td>Ivanov Ivan</td><td>Petrov Petr</td><td></td><td>Changed</td><td><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="outgoing-date third-row">07/15/2015</td>
+                    <td class="reg-number third-row">01-01/6</td>
+                    <td class="index third-row">01-01</td>
+                    <td class="type third-row">Letter</td>
+                    <td class="theme third-row">Whatever</td>
+                    <td class="send-to third-row">Organization 1</td>
+                    <td class="executor third-row">Ivanov Ivan</td>
+                    <td class="signatory third-row">Petrov Petr</td>
+                    <td class="notes third-row"></td>
+                    <td class="status third-row">Changed</td>
+                    <td class="actions third-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
             </table>
 
-            <table>
+            <table class="fax-document">
                 <caption><header><h2>Fax documents</h2></header>
                     <!--<small>Add element</small>-->
                 </caption>
                 <tr>
-                    <th id="Incoming-fax-date" class="active">Incoming date
-                        <img src="/img/02-Documents/Table/down_icon__--.png">
+                    <th class="active incoming-date">Incoming<br>date
+                        <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <img class="underline-fax-incoming-date" src="/img/02-Documents/Table/underline_incoming_fax_date__shape-1.png">
                     </th>
-                    <th>External Doc. Index</th>
-                    <th>External Doc. Date</th>
-                    <th>Type</th>
-                    <th>Theme</th>
-                    <th>Sent From</th>
-                    <th>Sent To</th>
-                    <th>Executor</th>
-                    <th>Execution Date</th>
-                    <th>Execution Mark</th>
-                    <th>Actions</th>
+                    <th class="external-doc-index">External<br>Doc. Index</th>
+                    <th class="external-doc-date">External<br>Doc. Date</th>
+                    <th class="type"><br>Type</th>
+                    <th class="theme"><br>Theme</th>
+                    <th class="sent-from"><br>Sent From</th>
+                    <th class="sent-to"><br>Sent To</th>
+                    <th class="executor"><br>Executor</th>
+                    <th class="execution-date">Execution<br>Date</th>
+                    <th class="execution-mark">Execution<br>Mark</th>
+                    <th class="actions"><br>Actions</th>
                 </tr>
                 <tr>
-                    <td>07/15/2015</td><td>01-01</td><td>07/15/2015</td><td>Letter</td><td>Whatever</td><td>Organization 1</td><td>EPAM</td><td>Ivanov Ivan</td><td>07/15/2015</td><td>Deleted</td><td><img src="/img/02-Documents/Table/edit_icon_1__--.png"><img src="/img/02-Documents/Table/delete_icon_1__--.png"></td>
+                    <td class="incoming-date first-row">07/15/2015</td>
+                    <td class="external-doc-index first-row">01-01</td>
+                    <td class="external-doc-date first-row">07/15/2015</td>
+                    <td class="type first-row">Letter</td>
+                    <td class="theme first-row">Whatever</td>
+                    <td class="sent-from first-row">Organization 1</td>
+                    <td class="sent-to first-row">EPAM</td>
+                    <td class="executor first-row">Ivanov Ivan</td>
+                    <td class="execution-date first-row">07/15/2015</td>
+                    <td class="execution-mark first-row">Deleted</td>
+                    <td class="actions first-row"><i class="fa fa-pencil" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></td>
                 </tr>
-                <tr>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                </tr>
-                <tr>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                </tr>
+                <!--<tr>-->
+                    <!--<td class="incoming-date second-row"></td>-->
+                    <!--<td class="external-doc-index second-row"></td>-->
+                    <!--<td class="external-doc-date second-row"></td>-->
+                    <!--<td class="type second-row"></td>-->
+                    <!--<td class="theme second-row"></td>-->
+                    <!--<td class="sent-from second-row"></td>-->
+                    <!--<td class="sent-to second-row"></td>-->
+                    <!--<td class="executor second-row"></td>-->
+                    <!--<td class="execution-date second-row"></td>-->
+                    <!--<td class="execution-mark second-row"></td>-->
+                    <!--<td class="actions second-row"></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="incoming-date third-row"></td>-->
+                    <!--<td class="external-doc-index third-row"></td>-->
+                    <!--<td class="external-doc-date third-row"></td>-->
+                    <!--<td class="type third-row"></td>-->
+                    <!--<td class="theme third-row"></td>-->
+                    <!--<td class="sent-from third-row"></td>-->
+                    <!--<td class="sent-to third-row"></td>-->
+                    <!--<td class="executor third-row"></td>-->
+                    <!--<td class="execution-date third-row"></td>-->
+                    <!--<td class="execution-mark third-row"></td>-->
+                    <!--<td class="actions third-row"></td>-->
+                <!--</tr>-->
             </table>
         </section>
         <section id="sentForGroupTab"></section>

@@ -1,0 +1,227 @@
+h2 {
+    /* Style for "incoming d" */
+    /*width: 229px;*/
+    /*height: 21px;*/
+    color: #666666;
+    font: 24px Oswald;
+    font-weight: 400;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 18px;
+}
+
+th {
+    /*width: 60px;*/
+    /*height: 27px;*/
+    /*color: #39c2d7;*/
+    color: #292929;
+    font: 14px Source Sans Pro;
+    font-weight: 700;
+    padding: 0;
+    vertical-align: text-top;
+}
+
+th.active {
+    color: #39c2d7;
+}
+
+td {
+    /*width: 942px;*/
+    /*height: 13px;*/
+    color: #111111;
+    font: 14px Source Sans Pro;
+    font-weight: 300;
+    border-width: 0;
+}
+
+th, td {
+    text-align: left;
+}
+
+.first-row, .third-row {
+    background-color: #f1f1f1;
+}
+
+.execution-mark, .status {
+    text-align: center;
+}
+/*td.first-row {*/
+    /*padding: 0;*/
+    /*border-width: thin;*/
+    /*border-color: #f1f1f1;*/
+/*}  !*не получается убрать полоски между рядами*!*/
+
+
+.incoming-document .incoming-date {
+    padding-left: 24px;
+}
+
+.incoming-document th.incoming-date {
+    width: 120px;
+}
+.incoming-date .underline-incoming-date {
+    position: relative;
+    left: -8px;
+    padding-top: 10px;
+}
+
+.incoming-document .incoming-date .fa.fa-chevron-down {
+    float: right;
+    padding-right: 38px;
+    color: #40c3d6;
+}
+.incoming-document th.incoming-number {
+    width: 91px;
+}
+
+.incoming-document th.external-doc-index {
+    width: 99px;
+}
+
+.incoming-document th.external-doc-date {
+    width: 110px;
+}
+
+.incoming-document th.type {
+    width: 88px;
+}
+
+.incoming-document th.theme {
+    width: 84px;
+}
+
+.incoming-document th.sent-from {
+    width: 104px;
+}
+
+.incoming-document th.sent-to {
+    width: 90px;
+}
+
+.incoming-document th.executor {
+    width: 92px;
+}
+
+.incoming-document th.execution-date {
+    width: 95px;
+}
+
+.incoming-document th.execution-mark {
+    width: 84px;
+}
+
+
+.outgoing-document .outgoing-date {
+    padding-left: 24px;
+}
+
+.outgoing-document th.outgoing-date {
+    width: 145px;
+}
+.outgoing-date .underline-outgoing-date {
+    position: relative;
+    left: -8px;
+    padding-top: 6px;
+}
+
+.outgoing-document .outgoing-date .fa.fa-chevron-down {
+    float: right;
+    padding-right: 36px;
+    color: #40c3d6;
+}
+
+.outgoing-document th.reg-number {
+    width: 106px;
+}
+
+.outgoing-document th.index {
+    width: 72px;
+}
+
+.outgoing-document th.type {
+    width: 73px;
+}
+
+.outgoing-document th.theme {
+    width: 145px;
+}
+
+.outgoing-document th.sent-to {
+    width: 145px;
+}
+
+.outgoing-document th.executor {
+    width: 106px;
+}
+
+.outgoing-document th.signatory{
+    width: 110px;
+}
+
+.outgoing-document th.notes {
+    width: 73px;
+}
+
+.outgoing-document th.status {
+    width: 85px;
+}
+
+
+.fax-document .incoming-date {
+    padding-left: 24px;
+}
+
+.fax-document th.incoming-date {
+    width: 145px;
+}
+.incoming-date .underline-fax-incoming-date {
+    position: relative;
+    left: -8px;
+    padding-top: 10px;
+}
+
+.fax-document .incoming-date .fa.fa-chevron-down {
+    float: right;
+    padding-right: 25px;
+    color: #40c3d6;
+}
+
+.fax-document th.incoming-date {
+    width: 108px;
+}
+
+.fax-document th.external-doc-index {
+    width: 107px;
+}
+
+.fax-document th.external-doc-date {
+    width: 110px;
+}
+
+.fax-document th.type {
+    width: 71px;
+}
+
+.fax-document th.theme {
+    width: 108px;
+}
+
+.fax-document th.sent-from {
+    width: 145px;
+}
+
+.fax-document th.sent-to {
+    width: 108px;
+}
+
+.fax-document th.executor {
+    width: 107px;
+}
+
+.fax-document th.execution-date {
+    width: 108px;
+}
+
+.fax-document th.execution-mark {
+    width: 84px;
+}
