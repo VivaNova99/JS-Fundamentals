@@ -5,19 +5,28 @@ section.toolbox li {
     text-align: center;
 }
 
-
-.toolbox_search {
-    position: relative;
+.create-document {
+    size: 190px 35px;
+    background-color: #a3c644;
 }
-.toolbox_search::before {
-    /*отредактировать расположение и цвет*/
-    content: "\f002";
-    /*noinspection CssNoGenericFontName*/
-    font-family: FontAwesome;
-    font-size: 16px;
-    line-height: 16px;
 
-    position: absolute;
-    display: block;
-    margin: 8px 0 0 19px;
+.attach-document {
+    size: 190px 35px;
+    background-color: #ecc134;
 }
+
+/*.toolbox_search {*/
+    /*position: relative;*/
+/*}*/
+/*.toolbox_search::before {*/
+    /*!*отредактировать расположение и цвет*!*/
+    /*content: "\f002";*/
+    /*!*noinspection CssNoGenericFontName*!*/
+    /*font-family: FontAwesome;*/
+    /*font-size: 16px;*/
+    /*line-height: 16px;*/
+
+    /*position: absolute;*/
+    /*display: block;*/
+    /*margin: 8px 0 0 19px;*/
+/*}*/
