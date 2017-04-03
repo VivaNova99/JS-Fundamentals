@@ -43,7 +43,7 @@ th, td {
     background-color: #f1f1f1;
 }
 
-.execution-mark, .status, .actions {
+td.execution-mark, td.status, td.actions {
     text-align: center;
 }
 /*td.first-row {*/
