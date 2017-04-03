@@ -27,13 +27,43 @@ section.content > ul {
     /*border-left: 2px solid #d3d3d3;*/
     /*border-right: 2px solid #d3d3d3;*/
     margin-top: 15px;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 12px;*/
+    background-color: #666666;
+}
+
+section.content > ul > li {
+    /*display: block;*/
+    /*border-top: 1px solid #d3d3d3;*/
+    /*border-bottom: 1px solid #ffffff;*/
+    /*border-left: 2px solid #d3d3d3;*/
+    /*border-right: 2px solid #d3d3d3;*/
+    /*margin-top: 15px;*/
     padding-top: 10px;
     padding-bottom: 12px;
+    /*background-color: #666666;*/
 }
 
 section.content > ul > li {
     display: inline-block;
+}
+
+.active.tab {
+    /*padding: 0;*/
+    size: 188px 41px;
+    background-color: #ffffff;
+}
+
+section.content > ul > li > a {
     padding: 10px 20px 12px 20px;
+    color: #feffff;
+    font: 12px Oswald;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+section.content > ul > li.active.tab > a {
+    color: #666666;
 }
 
 .content > section {
