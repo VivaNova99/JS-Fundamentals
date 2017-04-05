@@ -1,8 +1,10 @@
+
 section.content > div:target + section,
     /*чтобы при выборе вкладки экран не смещался, добавляем пустой элемент div, и делаем его целью - все равно смещается ((*/
-section.content > section,
-section.content > div,
-section.content > div.default:target + section {
+/*section.content > section,*/
+/*section.content > div,*/
+section.content > div.default:target + section
+{
     display: block;
 }  /*вторые две строчки - для того, чтобы неактивная вкладка не отображалась и не торчала из под активной, если*/
 /*она короче. Решение, вообще-то, для двух вкладок, для трех и более - нужно использовать first child еще*/
@@ -24,33 +26,20 @@ section.content > ul {
     display: block;
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #ffffff;
-    /*border-left: 2px solid #d3d3d3;*/
-    /*border-right: 2px solid #d3d3d3;*/
     margin-top: 15px;
-    /*padding-top: 10px;*/
-    /*padding-bottom: 12px;*/
     background-color: #666666;
 }
 
 section.content > ul > li {
-    /*display: block;*/
-    /*border-top: 1px solid #d3d3d3;*/
-    /*border-bottom: 1px solid #ffffff;*/
-    /*border-left: 2px solid #d3d3d3;*/
-    /*border-right: 2px solid #d3d3d3;*/
-    /*margin-top: 15px;*/
+    display: inline-block;
     padding-top: 10px;
     padding-bottom: 12px;
     /*background-color: #666666;*/
 }
 
-section.content > ul > li {
-    display: inline-block;
-}
-
 .active.tab {
     /*padding: 0;*/
-    size: 188px 41px;
+    /*size: 188px 41px;*/
     background-color: #ffffff;
 }
 

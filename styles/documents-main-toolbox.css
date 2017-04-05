@@ -1,4 +1,9 @@
+section.toolbox ul {
+    position: relative;
+}
+
 section.toolbox li {
+    /*position: relative;*/
     display: inline-block;
     line-height: 35px;
     vertical-align: middle;
@@ -6,13 +11,65 @@ section.toolbox li {
 }
 
 .create-document {
-    size: 190px 35px;
+    min-height: 35px;
+    min-width: 190px;
     background-color: #a3c644;
 }
 
+.create-document > a {
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+    font: 14px Source Sans Pro;
+    font-weight: 400;
+    color: #feffff;
+}
+
+.toolbox .fa.fa-file-o {
+    position: relative;
+    top: 0;
+    left: -5px;
+    /*width: 18px;*/
+    /*height: 20px;*/
+    font-size: 18px;
+}
+
+.toolbox .active.create-document .fa.fa-plus {
+    position: relative;
+    top: 4px;
+    left: -12px;
+    /*width: 18px;*/
+    /*height: 20px;*/
+    font-size: 8px;
+}
+
+.toolbox .active.create-document .fa.fa-caret-down {
+    padding-left: 15px;
+}
+
 .attach-document {
-    size: 190px 35px;
+    min-height: 35px;
+    min-width: 190px;
     background-color: #ecc134;
+}
+
+.attach-document > a {
+    font: 14px Source Sans Pro;
+    font-weight: 400;
+    color: #feffff;
+}
+
+.toolbox .active.attach-document .fa.fa-paperclip {
+    position: relative;
+    top: 0;
+    left: -10px;
+    /*width: 18px;*/
+    /*height: 20px;*/
+    font-size: 18px;
+}
+
+.toolbox .active.attach-document .fa.fa-caret-down {
+    padding-left: 15px;
 }
 
 /*.toolbox_search {*/
@@ -30,3 +87,61 @@ section.toolbox li {
     /*display: block;*/
     /*margin: 8px 0 0 19px;*/
 /*}*/
+
+/*.toolbox_search > form {*/
+    /*float: right;*/
+/*}*/
+/*.toolbox_search {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+/*}*/
+.toolbox_search input {
+    width: 390px;
+    height: 29px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font: 14px Source Sans Pro;
+    font-weight: 400;
+}
+
+.toolbox_search input::-webkit-input-placeholder {color:#5e5e5e;}
+.toolbox_search input::-moz-placeholder          {color:#5e5e5e;}/* Firefox 19+ */
+.toolbox_search input:-moz-placeholder           {color:#5e5e5e;}/* Firefox 18- */
+.toolbox_search input:-ms-input-placeholder      {color:#5e5e5e;}
+
+
+.toolbox_search .fa.fa-caret-down {
+    position: absolute;
+    right: 60px;
+    top: 8px;
+    color: #acacac;
+}
+
+.toolbox_search .toolbox-simple-search .fa.fa-search {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 8px;
+    right: 30px;
+    font-size: 20px;
+    color: #acacac;
+}
+
+.toolbox_search .toolbox-advanced-search .fa.fa-search {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 8px;
+    right: 5px;
+    font-size: 20px;
+    color: #acacac;
+}
+
+.toolbox_search .fa.fa-plus {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    /*width: 18px;*/
+    /*height: 20px;*/
+    font-size: 8px;
+    color: #acacac;
+}
