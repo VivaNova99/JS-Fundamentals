@@ -47,6 +47,15 @@ table {
     /*display: inline-block;*/
 /*}*/
 
+table h2 {
+    margin-top: 19px;
+    margin-bottom: 15px;
+}
+
+table.incoming-document h2 {
+    margin-top: 5px;
+}
+
 .first-row, .third-row {
     background-color: #f1f1f1;
 }
