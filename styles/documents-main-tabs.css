@@ -28,6 +28,7 @@ section.content > ul {
     border-bottom: 1px solid #ffffff;
     margin-top: 15px;
     background-color: #666666;
+    min-height: 41px;
 }
 
 section.content > ul > li {
@@ -37,21 +38,36 @@ section.content > ul > li {
     /*background-color: #666666;*/
 }
 
-.active.tab {
+.created-by-me-tab {
+    min-width: 150px;
+}
+
+.active.under-my-approval-tab {
     /*padding: 0;*/
     /*size: 188px 41px;*/
+    min-width: 188px;
     background-color: #ffffff;
 }
 
 section.content > ul > li > a {
     padding: 10px 20px 12px 20px;
     color: #feffff;
-    font: 12px Oswald;
+    font: 13px Oswald;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-section.content > ul > li.active.tab > a {
+.created-by-me-tab .fa.fa-pencil, .under-my-approval-tab .fa.fa-clock-o, .sent-for-group-tab .fa.fa-users {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.sent-for-group-tab .fa.fa-users {
+    padding-right: 13px;
+}
+
+section.content > ul > li.active.under-my-approval-tab > a {
     color: #666666;
 }
 
