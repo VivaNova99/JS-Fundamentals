@@ -1,0 +1,43 @@
+.footer {
+    position: relative;
+    background-color: #454446;
+    min-height: 60px;
+}
+
+.footer div, .footer a, .footer img {
+    display: inline-block;
+    color: #cdcdcd;
+    font: 12px Source Sans Pro;
+    padding-top: 24px;
+    height: 17px;
+}
+
+.footer-epam {
+    padding-left: 20px;
+}
+
+.footer img {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.footer a, footer img {
+    float: right;
+}
+
+.footer-bug {
+    padding-right: 25px;
+    padding-left: 12px;
+}
+
+.footer-help {
+    padding-right: 17px;
+    padding-left: 15px;
+}
+
+.footer-about {
+    padding-right: 13px;
+}
+
+
